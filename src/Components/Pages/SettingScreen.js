@@ -6,40 +6,39 @@ import {
   Item,
   Picker,
   Icon,
-  Card,
   Text,
+  Card,
   CardItem
 } from "native-base";
-import { Header } from "react-native-elements";
 
-export default class SettingScreen extends React.Component {
-  static navigationOptions = {
-    title: "Settings"
-  };
+class SettingScreen extends React.Component {
   render() {
     return (
       <Container>
-        <Header
-          centerComponent={{
-            text: "Settings",
-            style: { color: "#f9f9f9", fontWeight: "bold" }
-          }}
-        />
         <Content padder>
           <Card>
             <CardItem header bordered>
-              <Text style={{ color: "#466DC5" }}>Preferences</Text>
+              <Text
+                style={{ fontFamily: "Roboto", color: "#hsl(200, 68%, 35%)" }}
+              >
+                Preferences
+              </Text>
             </CardItem>
             <View style={{ marginTop: 20, marginLeft: 40 }}>
-              <Text style={{ fontStyle: "italic", fontWeight: "bold" }}>
-                Formula:{" "}
+              <Text
+                style={{
+                  fontFamily: "Roboto",
+                  fontWeight: "600",
+                  color: "hsl(211, 13%, 65%)"
+                }}
+              >
+                Formula
               </Text>
             </View>
-            <View style={{ marginTop: 10, marginLeft: 33, marginRight: 33 }}>
+            <View style={{ marginTop: 8, marginLeft: 33, marginRight: 33 }}>
               <Item picker>
                 <Picker
                   mode="dropdown"
-                  iosIcon={<Icon name="ios-arrow-down-outline" />}
                   placeholderIconColor="#007aff"
                   selectedValue={this.props.screenProps.formula}
                   onValueChange={e =>
@@ -52,15 +51,20 @@ export default class SettingScreen extends React.Component {
               </Item>
             </View>
             <View style={{ marginTop: 30, marginLeft: 40 }}>
-              <Text style={{ fontStyle: "italic", fontWeight: "bold" }}>
-                Gender:{" "}
+              <Text
+                style={{
+                  fontFamily: "Roboto",
+                  fontWeight: "600",
+                  color: "hsl(211, 13%, 65%)"
+                }}
+              >
+                Gender
               </Text>
             </View>
-            <View style={{ marginTop: 10, marginLeft: 33, marginRight: 33 }}>
+            <View style={{ marginTop: 8, marginLeft: 33, marginRight: 33 }}>
               <Item picker>
                 <Picker
                   mode="dropdown"
-                  iosIcon={<Icon name="ios-arrow-down-outline" />}
                   placeholderIconColor="#007aff"
                   selectedValue={this.props.screenProps.gender}
                   onValueChange={e =>
@@ -73,15 +77,20 @@ export default class SettingScreen extends React.Component {
               </Item>
             </View>
             <View style={{ marginTop: 30, marginLeft: 40 }}>
-              <Text style={{ fontStyle: "italic", fontWeight: "bold" }}>
-                Diet plan:{" "}
+              <Text
+                style={{
+                  fontFamily: "Roboto",
+                  fontWeight: "600",
+                  color: "hsl(211, 13%, 65%)"
+                }}
+              >
+                Diet plan
               </Text>
             </View>
-            <View style={{ marginTop: 10, marginLeft: 33, marginRight: 33 }}>
+            <View style={{ marginTop: 8, marginLeft: 33, marginRight: 33 }}>
               <Item picker>
                 <Picker
                   mode="dropdown"
-                  iosIcon={<Icon name="ios-arrow-down-outline" />}
                   placeholderIconColor="#007aff"
                   selectedValue={this.props.screenProps.weightOption}
                   onValueChange={e =>
@@ -95,15 +104,20 @@ export default class SettingScreen extends React.Component {
               </Item>
             </View>
             <View style={{ marginTop: 30, marginLeft: 40 }}>
-              <Text style={{ fontStyle: "italic", fontWeight: "bold" }}>
-                Measurement System:{" "}
+              <Text
+                style={{
+                  fontFamily: "Roboto",
+                  fontWeight: "600",
+                  color: "hsl(211, 13%, 65%)"
+                }}
+              >
+                Measurement System
               </Text>
             </View>
-            <View style={{ marginTop: 10, marginLeft: 33, marginRight: 33 }}>
+            <View style={{ marginTop: 8, marginLeft: 33, marginRight: 33 }}>
               <Item picker>
                 <Picker
                   mode="dropdown"
-                  iosIcon={<Icon name="ios-arrow-down-outline" />}
                   placeholderIconColor="#007aff"
                   selectedValue={this.props.screenProps.system}
                   onValueChange={e =>
@@ -117,8 +131,8 @@ export default class SettingScreen extends React.Component {
             </View>
             <View
               style={{
-                borderBottomColor: "#466DC5",
-                borderBottomWidth: 1,
+                borderTopColor: "hsl(200, 60%, 58%)",
+                borderTopWidth: 1.5,
                 marginTop: 10
               }}
             />
@@ -128,3 +142,5 @@ export default class SettingScreen extends React.Component {
     );
   }
 }
+
+export default SettingScreen;

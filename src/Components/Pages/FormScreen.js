@@ -14,20 +14,24 @@ import {
   Body,
   Text
 } from "native-base";
-import { Header, Button } from "react-native-elements";
+import { Button } from "react-native-elements";
 
 export default class FormScreen extends React.Component {
-  static navigationOptions = {
-    title: "Home"
-  };
-
   renderMifflin() {
     if (this.props.screenProps.system === "metric") {
       return (
         <Form>
           <View style={{ marginTop: 5, marginLeft: 15 }}>
             <Item stackedLabel>
-              <Label>Age</Label>
+              <Label
+                style={{
+                  color: "hsl(211, 13%, 65%)",
+                  fontFamily: "Roboto",
+                  fontWeight: "600"
+                }}
+              >
+                Age
+              </Label>
               <Input
                 type="number"
                 value={this.props.screenProps.age}
@@ -39,7 +43,15 @@ export default class FormScreen extends React.Component {
           </View>
           <View style={{ marginTop: 30, marginLeft: 15 }}>
             <Item stackedLabel>
-              <Label>Weight (Kg)</Label>
+              <Label
+                style={{
+                  color: "hsl(211, 13%, 65%)",
+                  fontFamily: "Roboto",
+                  fontWeight: "600"
+                }}
+              >
+                Weight (Kg)
+              </Label>
               <Input
                 type="number"
                 value={this.props.screenProps.weight}
@@ -51,7 +63,15 @@ export default class FormScreen extends React.Component {
           </View>
           <View style={{ marginTop: 30, marginLeft: 15 }}>
             <Item stackedLabel>
-              <Label>Height (cm)</Label>
+              <Label
+                style={{
+                  color: "hsl(211, 13%, 65%)",
+                  fontFamily: "Roboto",
+                  fontWeight: "600"
+                }}
+              >
+                Height (cm)
+              </Label>
               <Input
                 type="number"
                 value={this.props.screenProps.height}
@@ -68,7 +88,15 @@ export default class FormScreen extends React.Component {
         <Form>
           <View style={{ marginTop: 5, marginLeft: 15 }}>
             <Item stackedLabel>
-              <Label>Age</Label>
+              <Label
+                style={{
+                  color: "hsl(211, 13%, 65%)",
+                  fontFamily: "Roboto",
+                  fontWeight: "600"
+                }}
+              >
+                Age
+              </Label>
               <Input
                 type="number"
                 value={this.props.screenProps.age}
@@ -80,7 +108,15 @@ export default class FormScreen extends React.Component {
           </View>
           <View style={{ marginTop: 30, marginLeft: 15 }}>
             <Item stackedLabel>
-              <Label>Weight (lb)</Label>
+              <Label
+                style={{
+                  color: "hsl(211, 13%, 65%)",
+                  fontFamily: "Roboto",
+                  fontWeight: "600"
+                }}
+              >
+                Weight (lb)
+              </Label>
               <Input
                 type="number"
                 value={this.props.screenProps.weight}
@@ -92,9 +128,25 @@ export default class FormScreen extends React.Component {
           </View>
           <View style={{ marginTop: 30, marginLeft: 15 }}>
             <Item stackedLabel>
-              <Label>Height</Label>
+              <Label
+                style={{
+                  color: "hsl(211, 13%, 65%)",
+                  fontFamily: "Roboto",
+                  fontWeight: "600"
+                }}
+              >
+                Height
+              </Label>
               <Item label>
-                <Label>feet</Label>
+                <Label
+                  style={{
+                    color: "hsl(211, 13%, 65%)",
+                    fontFamily: "Roboto",
+                    fontWeight: "600"
+                  }}
+                >
+                  feet
+                </Label>
                 <Input
                   type="number"
                   value={this.props.screenProps.heightFeet}
@@ -102,7 +154,15 @@ export default class FormScreen extends React.Component {
                     this.props.screenProps.handleChange(e, "heightFeet")
                   }
                 />
-                <Label>inches</Label>
+                <Label
+                  style={{
+                    color: "hsl(211, 13%, 65%)",
+                    fontFamily: "Roboto",
+                    fontWeight: "600"
+                  }}
+                >
+                  inches
+                </Label>
                 <Input
                   type="number"
                   value={this.props.screenProps.heightIn}
@@ -124,7 +184,15 @@ export default class FormScreen extends React.Component {
         <Form>
           <View style={{ marginTop: 5, marginLeft: 15 }}>
             <Item stackedLabel>
-              <Label>Weight (Kg)</Label>
+              <Label
+                style={{
+                  color: "hsl(211, 13%, 65%)",
+                  fontFamily: "Roboto",
+                  fontWeight: "600"
+                }}
+              >
+                Weight (Kg)
+              </Label>
               <Input
                 type="number"
                 value={this.props.screenProps.weight}
@@ -136,7 +204,15 @@ export default class FormScreen extends React.Component {
           </View>
           <View style={{ marginTop: 30, marginLeft: 15 }}>
             <Item stackedLabel>
-              <Label>Body Fat (%)</Label>
+              <Label
+                style={{
+                  color: "hsl(211, 13%, 65%)",
+                  fontFamily: "Roboto",
+                  fontWeight: "600"
+                }}
+              >
+                Body Fat (%)
+              </Label>
               <Input
                 type="number"
                 value={this.props.screenProps.bodyFat}
@@ -153,7 +229,15 @@ export default class FormScreen extends React.Component {
         <Form>
           <View style={{ marginTop: 5, marginLeft: 15 }}>
             <Item stackedLabel>
-              <Label>Weight (lb)</Label>
+              <Label
+                style={{
+                  color: "hsl(211, 13%, 65%)",
+                  fontFamily: "Roboto",
+                  fontWeight: "600"
+                }}
+              >
+                Weight (lb)
+              </Label>
               <Input
                 type="number"
                 value={this.props.screenProps.weight}
@@ -165,7 +249,15 @@ export default class FormScreen extends React.Component {
           </View>
           <View style={{ marginTop: 30, marginLeft: 15 }}>
             <Item stackedLabel>
-              <Label>Body Fat (%)</Label>
+              <Label
+                style={{
+                  color: "hsl(211, 13%, 65%)",
+                  fontFamily: "Roboto",
+                  fontWeight: "600"
+                }}
+              >
+                Body Fat (%)
+              </Label>
               <Input
                 type="number"
                 value={this.props.screenProps.bodyFat}
@@ -176,28 +268,6 @@ export default class FormScreen extends React.Component {
             </Item>
           </View>
         </Form>
-      );
-    }
-  }
-
-  renderHeader() {
-    if (this.props.screenProps.formula === "mifflin") {
-      return (
-        <Header
-          centerComponent={{
-            text: "Mifflin St. Joer Formula",
-            style: { color: "#f9f9f9", fontWeight: "bold" }
-          }}
-        />
-      );
-    } else if (this.props.screenProps.formula === "katch") {
-      return (
-        <Header
-          centerComponent={{
-            text: "Katch-McArdle Formula",
-            style: { color: "#f9f9f9", fontWeight: "bold" }
-          }}
-        />
       );
     }
   }
@@ -214,24 +284,42 @@ export default class FormScreen extends React.Component {
     if (this.props.screenProps.weightOption === "gain") {
       return (
         <View style={{ marginTop: 30, marginLeft: 40 }}>
-          <Text style={{ fontStyle: "italic", fontWeight: "bold" }}>
-            Surplus:{" "}
+          <Text
+            style={{
+              color: "hsl(211, 13%, 65%)",
+              fontFamily: "Roboto",
+              fontWeight: "600"
+            }}
+          >
+            Calorie Surplus:{" "}
           </Text>
         </View>
       );
     } else if (this.props.screenProps.weightOption === "lose") {
       return (
         <View style={{ marginTop: 30, marginLeft: 40 }}>
-          <Text style={{ fontStyle: "italic", fontWeight: "bold" }}>
-            Deficit:{" "}
+          <Text
+            style={{
+              color: "hsl(211, 13%, 65%)",
+              fontFamily: "Roboto",
+              fontWeight: "600"
+            }}
+          >
+            Calorie Deficit:{" "}
           </Text>
         </View>
       );
     } else if (this.props.screenProps.weightOption === "maintain") {
       return (
         <View style={{ marginTop: 30, marginLeft: 40 }}>
-          <Text style={{ fontStyle: "italic", fontWeight: "bold" }}>
-            Maintain:{" "}
+          <Text
+            style={{
+              color: "hsl(211, 13%, 65%)",
+              fontFamily: "Roboto",
+              fontWeight: "600"
+            }}
+          >
+            Maintain Calories:{" "}
           </Text>
         </View>
       );
@@ -244,7 +332,7 @@ export default class FormScreen extends React.Component {
       this.props.screenProps.weightOption === "lose"
     ) {
       return (
-        <View style={{ marginTop: 20, marginLeft: 33, marginRight: 33 }}>
+        <View style={{ marginTop: 8, marginLeft: 33, marginRight: 33 }}>
           <Item picker>
             <Picker
               mode="dropdown"
@@ -293,33 +381,46 @@ export default class FormScreen extends React.Component {
     const { navigate } = this.props.navigation;
     return (
       <Container>
-        {this.renderHeader()}
         <Content padder>
           <Card>
             <CardItem header bordered>
-              <Text style={{ color: "#466DC5" }}>Stats</Text>
+              <Text
+                style={{ fontFamily: "Roboto", color: "#hsl(200, 68%, 35%)" }}
+              >
+                Stats
+              </Text>
             </CardItem>
             <CardItem>
               <Body>{this.renderFormula()}</Body>
             </CardItem>
             <View
               style={{
-                borderBottomColor: "#466DC5",
-                borderBottomWidth: 1,
+                borderTopColor: "hsl(200, 60%, 58%)",
+                borderTopWidth: 1.5,
                 marginTop: 10
               }}
             />
           </Card>
           <Card>
             <CardItem header bordered>
-              <Text style={{ color: "#466DC5" }}>Details</Text>
+              <Text
+                style={{ fontFamily: "Roboto", color: "#hsl(200, 68%, 35%)" }}
+              >
+                Details
+              </Text>
             </CardItem>
             <View style={{ marginTop: 20, marginLeft: 40 }}>
-              <Text style={{ fontStyle: "italic", fontWeight: "bold" }}>
+              <Text
+                style={{
+                  color: "hsl(211, 13%, 65%)",
+                  fontFamily: "Roboto",
+                  fontWeight: "600"
+                }}
+              >
                 Activity Level:{" "}
               </Text>
             </View>
-            <View style={{ marginTop: 20, marginLeft: 33, marginRight: 33 }}>
+            <View style={{ marginTop: 8, marginLeft: 33, marginRight: 33 }}>
               <Item picker>
                 <Picker
                   mode="dropdown"
@@ -341,14 +442,20 @@ export default class FormScreen extends React.Component {
             {this.renderSurplus()}
             {this.renderWeightOption()}
             <View style={{ marginTop: 30, marginLeft: 40 }}>
-              <Text style={{ fontStyle: "italic", fontWeight: "bold" }}>
+              <Text
+                style={{
+                  color: "hsl(211, 13%, 65%)",
+                  fontFamily: "Roboto",
+                  fontWeight: "600"
+                }}
+              >
                 Diet:{" "}
               </Text>
             </View>
             <View
               style={{
                 marginBottom: 11,
-                marginTop: 20,
+                marginTop: 8,
                 marginLeft: 33,
                 marginRight: 33
               }}
@@ -377,8 +484,8 @@ export default class FormScreen extends React.Component {
             </View>
             <View
               style={{
-                borderBottomColor: "#466DC5",
-                borderBottomWidth: 1,
+                borderTopColor: "hsl(200, 60%, 58%)",
+                borderTopWidth: 1.5,
                 marginTop: 10
               }}
             />
@@ -393,16 +500,20 @@ export default class FormScreen extends React.Component {
             }}
           >
             <Button
-              titleStyle={{ fontWeight: "700" }}
+              color="hsl(123, 12%, 97%)"
+              titleStyle={{
+                fontWeight: "600",
+                fontSize: 60
+              }}
               buttonStyle={{
-                backgroundColor: "#466DC5",
+                backgroundColor: "hsl(123, 35%, 51%)",
                 height: 45,
                 borderColor: "transparent",
                 borderWidth: 0,
                 borderRadius: 5
               }}
               containerStyle={{ marginTop: 20 }}
-              title="Submit"
+              title="SUBMIT"
               onPress={e => {
                 this.props.screenProps.handleSubmit(e);
                 navigate("Results");

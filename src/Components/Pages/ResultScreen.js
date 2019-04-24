@@ -8,7 +8,6 @@ import {
   View,
   Body
 } from "native-base";
-import { Header } from "react-native-elements";
 import { Col, Row, Grid } from "react-native-easy-grid";
 
 export default class ResultScreen extends React.Component {
@@ -70,8 +69,8 @@ export default class ResultScreen extends React.Component {
             </CardItem>
             <View
               style={{
-                borderBottomColor: "#466DC5",
-                borderBottomWidth: 1,
+                borderTopColor: "hsl(200, 60%, 58%)",
+                borderTopWidth: 1.5,
                 marginTop: 10
               }}
             />
@@ -109,8 +108,8 @@ export default class ResultScreen extends React.Component {
             </CardItem>
             <View
               style={{
-                borderBottomColor: "#466DC5",
-                borderBottomWidth: 1,
+                borderTopColor: "hsl(200, 60%, 58%)",
+                borderTopWidth: 1.5,
                 marginTop: 10
               }}
             />
@@ -122,31 +121,60 @@ export default class ResultScreen extends React.Component {
   render() {
     return (
       <Container>
-        <Header
-          centerComponent={{
-            text: "Results",
-            style: { color: "#f9f9f9", fontWeight: "bold" }
-          }}
-        />
         <Content padder>
           <Card>
             <CardItem header bordered>
               <Grid>
                 <Row>
                   <Col style={{ marginLeft: -5, width: 50 }}>
-                    <Text>TDEE</Text>
+                    <Text
+                      style={{
+                        fontFamily: "Roboto",
+                        color: "#hsl(200, 68%, 35%)"
+                      }}
+                    >
+                      TDEE
+                    </Text>
                   </Col>
                   <Col style={{ marginLeft: 10, width: 70 }}>
-                    <Text>Calories</Text>
+                    <Text
+                      style={{
+                        fontFamily: "Roboto",
+                        color: "#hsl(200, 68%, 35%)"
+                      }}
+                    >
+                      Calories
+                    </Text>
                   </Col>
                   <Col style={{ marginLeft: 10, width: 70 }}>
-                    <Text>Carbs(g)</Text>
+                    <Text
+                      style={{
+                        fontFamily: "Roboto",
+                        color: "#hsl(200, 68%, 35%)"
+                      }}
+                    >
+                      Carbs(g)
+                    </Text>
                   </Col>
                   <Col style={{ marginLeft: 10, width: 80 }}>
-                    <Text>Protein(g)</Text>
+                    <Text
+                      style={{
+                        fontFamily: "Roboto",
+                        color: "#hsl(200, 68%, 35%)"
+                      }}
+                    >
+                      Protein(g)
+                    </Text>
                   </Col>
                   <Col style={{ marginLeft: 10, width: 70 }}>
-                    <Text>Fat(g)</Text>
+                    <Text
+                      style={{
+                        fontFamily: "Roboto",
+                        color: "#hsl(200, 68%, 35%)"
+                      }}
+                    >
+                      Fat(g)
+                    </Text>
                   </Col>
                 </Row>
               </Grid>
@@ -207,8 +235,8 @@ export default class ResultScreen extends React.Component {
             </Grid>
             <View
               style={{
-                borderBottomColor: "#466DC5",
-                borderBottomWidth: 1,
+                borderTopColor: "hsl(200, 60%, 58%)",
+                borderTopWidth: 1.5,
                 marginTop: 10
               }}
             />

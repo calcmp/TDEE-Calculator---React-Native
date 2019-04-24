@@ -4,13 +4,142 @@ import FormulaScreen from "./FormulaScreen.js";
 import InfoScreen from "./InfoScreen.js";
 import SettingScreen from "./SettingScreen.js";
 import ResultScreen from "./ResultScreen.js";
-import { createBottomTabNavigator, createAppContainer } from "react-navigation";
+import {
+  createStackNavigator,
+  createBottomTabNavigator,
+  createAppContainer
+} from "react-navigation";
 import Icon from "react-native-vector-icons/Ionicons";
+
+const HomeNav = createStackNavigator(
+  {
+    Home: {
+      screen: FormScreen
+    }
+  },
+  {
+    defaultNavigationOptions: {
+      headerTitle: "TDEE Calculator",
+      headerLeft: null,
+      headerStyle: {
+        backgroundColor: "hsl(200, 72%, 31%)"
+      },
+      headerTintColor: "hsl(200, 22%, 90%)",
+      headerTitleStyle: {
+        fontWeight: "600",
+        fontFamily: "Roboto",
+        fontSize: 18,
+        textAlign: "center",
+        flex: 1
+      }
+    }
+  }
+);
+
+const FormulaNav = createStackNavigator(
+  {
+    Formula: {
+      screen: FormulaScreen
+    }
+  },
+  {
+    defaultNavigationOptions: {
+      headerTitle: "TDEE Calculator",
+      headerLeft: null,
+      headerStyle: {
+        backgroundColor: "hsl(200, 72%, 31%)"
+      },
+      headerTintColor: "hsl(200, 22%, 90%)",
+      headerTitleStyle: {
+        fontWeight: "600",
+        fontFamily: "Roboto",
+        fontSize: 18,
+        textAlign: "center",
+        flex: 1
+      }
+    }
+  }
+);
+
+const ResultsNav = createStackNavigator(
+  {
+    Results: {
+      screen: ResultScreen
+    }
+  },
+  {
+    defaultNavigationOptions: {
+      headerTitle: "TDEE Calculator",
+      headerLeft: null,
+      headerStyle: {
+        backgroundColor: "hsl(200, 72%, 31%)"
+      },
+      headerTintColor: "hsl(200, 22%, 90%)",
+      headerTitleStyle: {
+        fontWeight: "600",
+        fontFamily: "Roboto",
+        fontSize: 18,
+        textAlign: "center",
+        flex: 1
+      }
+    }
+  }
+);
+
+const InfoNav = createStackNavigator(
+  {
+    About: {
+      screen: InfoScreen
+    }
+  },
+  {
+    defaultNavigationOptions: {
+      headerTitle: "TDEE Calculator",
+      headerLeft: null,
+      headerStyle: {
+        backgroundColor: "hsl(200, 72%, 31%)"
+      },
+      headerTintColor: "hsl(200, 22%, 90%)",
+      headerTitleStyle: {
+        fontWeight: "600",
+        fontFamily: "Roboto",
+        fontSize: 18,
+        textAlign: "center",
+        flex: 1
+      }
+    }
+  }
+);
+
+const SettingsNav = createStackNavigator(
+  {
+    Settings: {
+      screen: SettingScreen
+    }
+  },
+  {
+    defaultNavigationOptions: {
+      headerTitle: "TDEE Calculator",
+      headerLeft: null,
+      headerStyle: {
+        backgroundColor: "hsl(200, 72%, 31%)"
+      },
+      headerTintColor: "hsl(200, 22%, 90%)",
+      headerTitleStyle: {
+        fontWeight: "600",
+        fontFamily: "Roboto",
+        fontSize: 18,
+        textAlign: "center",
+        flex: 1
+      }
+    }
+  }
+);
 
 const TabNavigator = createBottomTabNavigator(
   {
     Home: {
-      screen: FormScreen,
+      screen: HomeNav,
       navigationOptions: {
         tabBarLabel: "Home",
         tabBarIcon: ({ tintColor }) => (
@@ -19,7 +148,7 @@ const TabNavigator = createBottomTabNavigator(
       }
     },
     Formula: {
-      screen: FormulaScreen,
+      screen: FormulaNav,
       navigationOptions: {
         tabBarLabel: "Formula",
         tabBarIcon: ({ tintColor }) => (
@@ -28,7 +157,7 @@ const TabNavigator = createBottomTabNavigator(
       }
     },
     About: {
-      screen: InfoScreen,
+      screen: InfoNav,
       navigationOptions: {
         tabBarLabel: "Info",
         tabBarIcon: ({ tintColor }) => (
@@ -37,7 +166,7 @@ const TabNavigator = createBottomTabNavigator(
       }
     },
     Settings: {
-      screen: SettingScreen,
+      screen: SettingsNav,
       navigationOptions: {
         tabBarLabel: "Settings",
         tabBarIcon: ({ tintColor }) => (
@@ -46,7 +175,7 @@ const TabNavigator = createBottomTabNavigator(
       }
     },
     Results: {
-      screen: ResultScreen,
+      screen: ResultsNav,
       navigationOptions: {
         tabBarLabel: "Results",
         tabBarIcon: ({ tintColor }) => (
@@ -61,10 +190,11 @@ const TabNavigator = createBottomTabNavigator(
     navigationOptions: {
       tabBarVisible: true
     },
+
     tabBarOptions: {
-      style: { backgroundColor: "#466DC5", height: 50 },
-      activeTintColor: "#f9f9f9",
-      inactiveTintColor: "#cccccc"
+      style: { backgroundColor: "white", height: 50 },
+      activeTintColor: "hsl(200, 72%, 31%)",
+      inactiveTintColor: "hsl(211, 10%, 53%)"
     }
   }
 );

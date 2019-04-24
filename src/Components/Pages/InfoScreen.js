@@ -8,27 +8,24 @@ import {
   Body,
   View
 } from "native-base";
-import { Header } from "react-native-elements";
 
 const InfoScreen = () => {
   return (
     <Container>
-      <Header
-        centerComponent={{
-          text: "About",
-          style: { color: "#f9f9f9", fontWeight: "bold" }
-        }}
-      />
       <Content padder>
         <Card>
           <CardItem header bordered>
-            <Text style={{ color: "#466DC5" }}>TDEE?</Text>
+            <Text
+              style={{ fontFamily: "Roboto", color: "#hsl(200, 68%, 35%)" }}
+            >
+              TDEE?
+            </Text>
           </CardItem>
           <CardItem>
             <Body>
               <Text>
                 This program calculates your{" "}
-                <Text style={{ fontWeight: "bold" }}>
+                <Text style={{ fontWeight: "600" }}>
                   TDEE (total daily energy expenditure)
                 </Text>
                 <Text>
@@ -46,11 +43,11 @@ const InfoScreen = () => {
                   There are two formulas used on this app for calculating your
                   TDEE. The{" "}
                 </Text>
-                <Text style={{ fontWeight: "bold" }}>
+                <Text style={{ fontWeight: "600" }}>
                   Mifflin St. Jeor formula
                 </Text>
                 <Text> and the</Text>{" "}
-                <Text style={{ fontWeight: "bold" }}>
+                <Text style={{ fontWeight: "600" }}>
                   Katch-McArdle formula.
                 </Text>{" "}
                 <Text>
@@ -63,8 +60,8 @@ const InfoScreen = () => {
           </CardItem>
           <View
             style={{
-              borderBottomColor: "#466DC5",
-              borderBottomWidth: 1,
+              borderTopColor: "hsl(200, 60%, 58%)",
+              borderTopWidth: 1.5,
               marginTop: 10
             }}
           />
@@ -72,12 +69,16 @@ const InfoScreen = () => {
 
         <Card>
           <CardItem header bordered>
-            <Text style={{ color: "#466DC5" }}>Activity Levels</Text>
+            <Text
+              style={{ fontFamily: "Roboto", color: "#hsl(200, 68%, 35%)" }}
+            >
+              Activity Levels
+            </Text>
           </CardItem>
           <CardItem>
             <Body>
               <Text>
-                <Text style={{ fontWeight: "bold" }}>Sedentary: </Text>
+                <Text style={{ fontWeight: "600" }}>Sedentary: </Text>
                 <Text>Little or no exercise. Desk job: IT, bank, etc.</Text>
               </Text>
             </Body>
@@ -85,7 +86,7 @@ const InfoScreen = () => {
           <CardItem>
             <Body>
               <Text>
-                <Text style={{ fontWeight: "bold" }}>Light Activity: </Text>
+                <Text style={{ fontWeight: "600" }}>Light Activity: </Text>
                 <Text>Light exercise. Climbing stairs a few times a day.</Text>
               </Text>
             </Body>
@@ -93,7 +94,7 @@ const InfoScreen = () => {
           <CardItem>
             <Body>
               <Text>
-                <Text style={{ fontWeight: "bold" }}>Moderate Activity: </Text>
+                <Text style={{ fontWeight: "600" }}>Moderate Activity: </Text>
                 <Text>Moderate exercise. Teacher, salesman, etc.</Text>
               </Text>
             </Body>
@@ -101,7 +102,7 @@ const InfoScreen = () => {
           <CardItem>
             <Body>
               <Text>
-                <Text style={{ fontWeight: "bold" }}>Very Active: </Text>
+                <Text style={{ fontWeight: "600" }}>Very Active: </Text>
                 <Text>Hard exercise. Carpenter, mailman, etc.</Text>
               </Text>
             </Body>
@@ -116,8 +117,8 @@ const InfoScreen = () => {
           </CardItem>
           <View
             style={{
-              borderBottomColor: "#466DC5",
-              borderBottomWidth: 1,
+              borderTopColor: "hsl(200, 60%, 58%)",
+              borderTopWidth: 1.5,
               marginTop: 10
             }}
           />
@@ -125,12 +126,16 @@ const InfoScreen = () => {
 
         <Card>
           <CardItem header bordered>
-            <Text style={{ color: "#466DC5" }}>Additional</Text>
+            <Text
+              style={{ fontFamily: "Roboto", color: "#hsl(200, 68%, 35%)" }}
+            >
+              Additional
+            </Text>
           </CardItem>
           <CardItem>
             <Body>
               <Text>
-                *Your <Text style={{ fontWeight: "bold" }}>TDEE</Text>
+                *Your <Text style={{ fontWeight: "600" }}>TDEE</Text>
                 <Text>
                   {" "}
                   is the amount of energy which you burn in calories per day.
@@ -142,7 +147,7 @@ const InfoScreen = () => {
             <Body>
               <Text>
                 <Text>*</Text>
-                <Text style={{ fontWeight: "bold" }}>
+                <Text style={{ fontWeight: "600" }}>
                   Basal metabolic rate (BMR)
                 </Text>
                 <Text>
@@ -158,15 +163,15 @@ const InfoScreen = () => {
               <Text>
                 *For a novice, it is recommended that for gaining weight you
                 don't consume more than{" "}
-                <Text style={{ fontWeight: "bold" }}>20%</Text>
+                <Text style={{ fontWeight: "600" }}>20%</Text>
                 <Text> of your TDEE in calories.</Text>
               </Text>
             </Body>
           </CardItem>
           <View
             style={{
-              borderBottomColor: "#466DC5",
-              borderBottomWidth: 1,
+              borderTopColor: "hsl(200, 60%, 58%)",
+              borderTopWidth: 1.5,
               marginTop: 10
             }}
           />

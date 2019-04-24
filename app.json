@@ -1,16 +1,17 @@
 {
   "expo": {
-    "name": "Accurate TDEE & Caloric Intake Calculator",
+    "name": "TDEE Calculator",
     "slug": "tdee-calc",
     "privacy": "public",
     "sdkVersion": "32.0.0",
     "platforms": ["ios", "android"],
-    "version": "2.0.1",
+    "version": "5",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/Icon.png",
+    "facebookAppId": "1262925177191349",
     "splash": {
-      "image": "./assets/splash.png",
-      "backgroundColor": "#466DC5",
+      "image": "./assets/Splash.png",
+      "backgroundColor": "#166086",
       "resizeMode": "cover"
     },
     "updates": {
@@ -23,7 +24,7 @@
     },
     "android": {
       "package": "com.callumpenny.tdeecalculator",
-      "versionCode": 5,
+      "versionCode": 8,
       "permissions": []
     }
   }

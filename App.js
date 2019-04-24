@@ -167,29 +167,6 @@ export default class App extends React.Component {
     let tempCal = this.state.data[3].value - this.state.data[2].value;
     this.state.finalCal = tempCal;
     this.setState({ finalCal: this.state.finalCal });
-
-    console.log("Weight: ", this.state.weight);
-    console.log("Height: ", this.state.height);
-    console.log("Height Feet: ", this.state.heightFeet);
-    console.log("Height Inches: ", this.state.heightIn);
-    console.log("Age: ", this.state.age);
-    console.log("tempWeight: ", this.state.tempWeight);
-    console.log("tempHeight: ", this.state.tempHeight);
-    console.log("BMR Male: ", this.state.data[0].value);
-    console.log("Activity: ", this.state.activity);
-    console.log("Surplus%: ", this.state.surplus);
-    console.log("Macro: ", this.state.macro);
-    console.log("TDEE: ", this.state.data[2].value);
-    console.log("Surplus: ", this.state.data[3].value);
-    console.log("Macro1: ", this.state.data[7].value);
-    console.log("Macro2: ", this.state.data[8].value);
-    console.log("Macro3: ", this.state.data[9].value);
-    console.log("Gender: ", this.state.gender);
-    console.log("WeightOption: ", this.state.weightOption);
-    console.log("System: ", this.state.system);
-    console.log("Formula: ", this.state.formula);
-    console.log("LBM: ", this.state.data[1].value);
-    console.log("finalCal: ", this.state.finalCal);
   }
 
   render() {
